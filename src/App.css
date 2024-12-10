@@ -1,38 +1,124 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures the body spans at least the viewport height */
+}
+
+/* Main App Container */
 .App {
   text-align: center;
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90%; /* Ensures responsiveness for smaller screens */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Page Title Styling */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Input Field Styling */
+input {
+  padding: 10px;
+  width: calc(100% - 20px);
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box; /* Ensures consistent sizing */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Button Styling */
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #666;
   color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Results Section Styling */
+.results-section {
+  margin-top: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Error Message Styling */
+.error {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Centered Text for Empty State */
+.center-text {
+  text-align: center; /* Horizontally centers text */
+  margin-top: 20px; /* Adds spacing */
+  font-size: 16px;
+  color: #666; /* Subtle gray for placeholder text */
+}
+
+/* Song Container Styling */
+.song-container {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Individual Song Entry */
+.song {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.song:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds hover effect for entries */
+}
+
+.song img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+/* Song Details */
+.song-details {
+  font-size: 14px;
+  color: #333;
+}
+
+.song-details .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.song-details .artist {
+  font-size: 12px;
+  color: #666;
 }
